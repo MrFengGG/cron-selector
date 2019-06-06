@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.4.1.slim.min.js"></script>
+    <script src="./cron-selector.js"></script>
+    <link href="./cron-selector.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="cronSelector"></div>
+    <button>确定</button>
+</body>
+<script>
+    $(function(){
+        var cronSelector = $.cronSelector({
+                                container:'#cronSelector',
+                                locatedWeek:true
+                            });
+                            
+        cronSelector.parseVal('7,16,59 1-29/3 * ? * 2,3,1 *');
+        $('button').click(function(){
+            alert(cronSelector.val());
+        });
+    });
+</script>
+</html>

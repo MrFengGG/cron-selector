@@ -1,0 +1,48 @@
+
+    *{
+        margin:0px;padding:0px; box-sizing: border-box
+    }
+    body{
+        font-family:'微软雅黑', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px
+    }
+    .pb-tag-box{
+        padding:12px;
+    }
+    .pb-tag{
+        height: 28px;
+        line-height: 28px;
+    }
+    .pb-tag .pb-tag-item{
+        float: left;
+        background: #eee;
+        padding:0 14px;
+        margin-right: 10px;
+        color:#565656;
+        cursor: pointer;
+    }
+    .pb-tag .pb-tag-item.active,.pb-tag .pb-tag-item:hover{
+        background: #1c72e4;
+        color:#fff;
+    }
+    .pb-tag-body{
+        padding:10px 0;
+    }
+    .pb-form-item {
+        line-height: 24px;
+        margin-bottom: 4px;
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .pb-form-check{
+        position: relative;
+        top:2px;
+        margin-right: 2px;
+    }
+    .pb-form-input{
+        width:40px;
+        border:1px solid #eee;
+        height: 24px;
+        padding:4px;
+        margin:0 4px;
+    }
